@@ -121,11 +121,11 @@ header {
   height: 80%;
 
   position: absolute;
-  left: 16%;
+  left: 34%;
   background: var(--color-orange);
 }
 
-.line li a:hover {
+.menu .flex li a:hover {
   color: var(--color-orange);
   transition: all 0.5s;
 }
@@ -447,47 +447,46 @@ footer .top-footer .footer-right ul li {
 }
 
 /* Media query for screens up to 768px wide */
-@media (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .menu {
     flex-direction: column; /* Adjust the styles for smaller screens */
+  }
+  header {
+    box-shadow: 0 0 10px 5px gray;
+    position: sticky;
+    top: 0;
+    background: var(--body-bg);
+    z-index: 999;
+  }
 
-    header {
-      box-shadow: 0 0 10px 5px gray;
-      position: sticky;
-      top: 0;
-      background: var(--body-bg);
-      z-index: 999;
-    }
+  .header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+  }
 
-    .header {
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 1rem;
-    }
+  .logo {
+    font-size: 1rem;
+    position: relative;
+  }
 
-    .logo {
-      font-size: 1rem;
-      position: relative;
-    }
-
-    /* .logo > div:nth-child(1) {
+  /* .logo > div:nth-child(1) {
           font-weight: bolder;
           margin-right: 1rem;
         } */
 
-    .line::before {
-      content: "";
-      width: 4px;
-      height: 80%;
+  .line::before {
+    content: "";
+    width: 4px;
+    height: 80%;
 
-      position: absolute;
-      left: 37%;
-      background: var(--color-orange);
-    }
+    position: absolute;
+    left: 16%;
+    background: var(--color-orange);
+  }
 
-    .line li a:hover {
-      color: var(--color-orange);
-      transition: all 0.5s;
-    }
+  .line li a:hover {
+    color: var(--color-orange);
+    transition: all 0.5s;
   }
 }

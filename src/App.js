@@ -7,7 +7,6 @@ import Info from "./components/Info";
 import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import Works from "./components/Works";
-import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -18,21 +17,13 @@ function App() {
           <i className="fa-solid fa-circle-half-stroke"></i>
         </label>
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Hero />}></Route>
-          <Route path="/skills" element={<Skills />}></Route>
-          <Route path="/projects" element={<Works />}></Route>
-          <Route path="/about-me" element={<Aboutme />}></Route>
-          <Route path="/contact" element={<Contact />}></Route>
-          <Route path="/footer" element={<Footer />}></Route>
-        </Routes>
-        {/* <Hero />
+        <Hero />
         <Info />
         <Skills />
         <Works />
         <Aboutme />
         <Contact />
-        <Footer /> */}
+        <Footer />
       </div>
     </>
   );
