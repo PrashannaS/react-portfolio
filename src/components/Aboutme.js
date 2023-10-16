@@ -32,7 +32,7 @@ const Aboutme = () => {
           <p>Sydney, Austalia</p>
 
           <div>
-            <div className="tag">Intrest</div>
+            <div className="tag">Interest</div>
             <div className="hobby flex container ">
               <span>Coding </span>
               <span>Football</span>

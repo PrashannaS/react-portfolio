@@ -1,0 +1,283 @@
+@media only screen and (max-width: 600px) {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0px;
+  }
+  header {
+    box-shadow: 0 0 10px 5px gray;
+    position: sticky;
+    top: 0;
+    background: var(--body-bg);
+    z-index: 999;
+  }
+
+  .header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+  }
+
+  .logo {
+    font-size: 0.7rem;
+    position: relative;
+  }
+
+  .soft-engi {
+    display: flex;
+    flex-direction: column;
+    font: 1em sans-serif;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  /* .logo > div:nth-child(1) {
+            font-weight: bolder;
+            margin-right: 1rem;
+          } */
+
+  .line::before {
+    content: "";
+    width: 4px;
+    height: 60%;
+
+    position: absolute;
+    left: 26%;
+    background: var(--color-orange);
+  }
+
+  .line li a:hover {
+    color: var(--color-orange);
+    transition: all 0.5s;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .menu {
+    display: none !important;
+  }
+  /* hamburger-menu.css */
+  .hamburger-menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    z-index: 99; /* Ensure it's above the content */
+  }
+
+  .hamburger-menu.open {
+    display: block;
+  }
+
+  .hamburger-icon {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 3; /* Ensure it's above the overlay */
+  }
+
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+  }
+
+  .menu-items {
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3; /* Ensure it's above the overlay */
+  }
+  /* ============ hero section ==========  */
+
+  .hero-section {
+    padding-top: 10rem;
+    color: var(--text-color);
+  }
+
+  .hero {
+    grid-template-areas: "left right";
+    background: var(--color-orange);
+    padding: 0 2rem;
+  }
+
+  .left {
+    grid-area: left;
+
+    justify-content: center;
+    align-items: center;
+    margin-left: 5vw;
+    flex-direction: column;
+  }
+
+  .left .name {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  .left button {
+    background: var(--dark-bg);
+    padding: 10px 2rem;
+    border-radius: 2rem;
+    color: var(--body-bg);
+  }
+
+  .left .tag {
+    font-size: 2.2rem;
+    font-weight: bolder;
+    letter-spacing: 5px;
+  }
+
+  .right {
+    grid-area: right;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: -4rem;
+  }
+
+  .right img {
+    height: 90%;
+    /* box-shadow: 10px black; */
+  }
+
+  /* ============= banner ==========  */
+
+  .banner {
+    background: rgb(237, 154, 59);
+    margin-top: 7rem;
+    padding: 0.5rem;
+    border: 2px solid var(--border-color);
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 100px;
+  }
+
+  .banner .info-divider {
+    background: rgb(0, 0, 0);
+    width: 2px;
+    height: 60px;
+  }
+
+  .banner .info-content .icon-container {
+    background: var(--color-orange);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner .info-content .icon-container i {
+    font-size: 1rem;
+    color: aliceblue;
+  }
+
+  .banner .info-content span {
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+
+  .banner .info-content p {
+    color: white;
+  }
+  /* ==== about me section ====  */
+
+  .about {
+    background: rgba(206, 141, 18, 0.511);
+    padding-top: 7rem;
+    margin-bottom: 2rem;
+  }
+
+  .about-content {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-content .myImg {
+    width: 30%;
+  }
+
+  .about-content.myImg img {
+    min-width: 350px;
+    max-width: 400px;
+  }
+  .flipped-image {
+    transform: scaleX(-1);
+  }
+
+  .about-content .my-bio h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-family: Algerian;
+  }
+
+  .my-bio p:nth-child(4) {
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 1rem 0;
+  }
+
+  .my-bio .tag {
+    font-weight: bold;
+    /* font-size: 1.3rem; */
+    /* padding-bottom: 1rem; */
+  }
+
+  .my-bio .tag + div span {
+    /* padding: 0.8rem 1.2rem; */
+    border-radius: 5px;
+  }
+
+  .my-bio .tag + div span:hover {
+    cursor: pointer;
+    background: gray;
+  }
+
+  .my-bio .hobby {
+    padding-bottom: 1rem;
+  }
+
+  /* ====== Projects =====  */
+
+  .projects {
+    margin-top: 3rem;
+    padding: 7rem 0;
+  }
+
+  .projects .project-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-card {
+    box-shadow: -1px 14px 20px 8px gray;
+    border-radius: 5px;
+    padding: 1rem;
+  }
+
+  .project-card .top img {
+    width: 100%;
+  }
+}

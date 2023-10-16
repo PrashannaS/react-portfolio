@@ -1,5 +1,9 @@
 import React from "react";
+
+import { useState } from "react";
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header>
       <nav className="container flex header">
@@ -14,8 +18,19 @@ const Navbar = () => {
             </div>
           </div>
         </div>
+
         <div className="menu">
-          <ul class="flex">
+          <div className="hamburger">
+            {isOpen ? (
+              <i class="fa-solid fa-xmark" onClick={() => setIsOpen(false)}></i>
+            ) : (
+              <i class="fa-solid fa-bars" onClick={() => setIsOpen(true)}></i>
+            )}
+          </div>
+          <ul
+            class={isOpen ? "flex slide" : "flex"}
+            onClick={() => setIsOpen(false)}
+          >
             <li>
               <a href="#home">Home</a>
             </li>

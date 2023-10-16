@@ -29,7 +29,7 @@ const Hero = () => {
         <div className="left flex">
           <div>
             Hi I'm <span className="name"> Prashanna Shrestha </span>
-            <div className="tag">Frontend Developer</div>
+            <div className="tag">FRONTEND DEVELOPER</div>
             <p>I love coding and sleeping.</p>
             <div>
               <a href="./resume.pdf" download="">

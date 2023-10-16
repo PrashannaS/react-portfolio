@@ -20,8 +20,8 @@ const Info = () => {
           <i className="fa-solid fa-award"></i>
         </div>
         <div>
-          <span>Many Projects</span>
-          <p>Completed</p>
+          <span>Projects</span>
+          <p>5</p>
         </div>
       </div>
 
